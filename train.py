@@ -13,6 +13,7 @@ from sklearn.impute import SimpleImputer
 
 df = pd.read_csv("data_processed.csv")
 
+
 #### Get features ready to model! 
 y = df.pop("cons_general").to_numpy()
 y[y< 4] = 0
